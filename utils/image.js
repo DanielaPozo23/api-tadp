@@ -1,9 +1,9 @@
-function getFilePath(file) {
-  const getFilePath = file.path;
-  const fileSplit = getFilePath.split("\\");
-  return `${fileSplit[0]}/${fileSplit[1]}`;
+function getFilePath(file){
+  const filePath=file.path;
+  const fileSplit=filePath.split("\\");
+  return `${fileSplit[1]}/${fileSplit[2]}`;
 }
 
-module.exports = {
-  getFilePath,
-};
+module.exports={
+  getFilePath
+}
